@@ -16,6 +16,8 @@
   - calculate target for each minibatch transition
     - if ss' is terminal state then tt = rr
     - otherwise tt = rr + gmax Q(ss', aa')
+  - if robot has not updated location after 10 turns
+    - then restart the simulation
   
 # Defining the MDP
 
