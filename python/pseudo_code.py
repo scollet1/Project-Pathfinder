@@ -31,8 +31,7 @@ class Brain:
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
   
-class Robot
-  steps = 
+class Robot:
   epsilon = EPSILON_MAX
   
   def init(params)
@@ -56,7 +55,7 @@ class Robot
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
   
-class Domain #our simulated world
+class Domain: #our simulated world
   
   def init(params)
     init map
@@ -73,7 +72,7 @@ class Domain #our simulated world
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
     
-class Agents
+class Agents:
   
   def init(params)
    
