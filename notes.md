@@ -19,25 +19,18 @@
   
 # Defining the MDP
 
-  S is a finite set of states
-    A 2d list of possible spaces to move into. This is defined by local (x, y) coordinates, relative to the agent
+  S is an infinite set of states
 
   A is a finite set of actions
-    A 2d list of possible movement actions. A vector to navigate and a negative or positive 1
+    - A 2d list of possible movement actions. A vector to navigate
 
   P_a(s, s') is the probability that action a in state s at time t will lead to s' at t + 1
-    traversing the list of possible S and possible A
-      if (x, y) are not occupied at s'
-        then the probability of moving to, and existing in, that state is high
-      else if (x, y) are occupied at s'
-        then the probability of moving to, and existing in, that state is low
-
+    - traversing the list of possible S and possible A
+    
   R_a(s, s') is the immediate reward received after transitioning from state s to state s' due to action a
-    for each step closer to s_END, a reward is given
-    for each step farther from s_END, a reward is taken away
 
   g is an element of [0, 1] otherwise known as the discount factor
-    for each step in time, rewards farthest from the agent are diminished
+    - for each step in time, rewards farthest from the agent are diminished
 
   π(s) := ∑ P_π(s) • (s, s')(R_π(s) • (s, s') + gV(s'))
           s'
