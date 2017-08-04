@@ -8,13 +8,10 @@ memory = large value
 batch size = how many nodes do we have??? [64, ~ 100] is a good range
 gamma = this modifies the reward by diminishing returns over time [0, 1]
 lambda = rate of decay
-epsilon = this is for a greedy epsilon problem to determine what actions we search for [0, 1]
+EPSILON_MAX = 1 #this is for a greedy epsilon problem to determine what actions we search for [0, 1]
 
-def loss function()
-  err = 
-  ~ magic ~
-  return (loss)
-  
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
 class Brain:
   def init(some params)
     initialize
@@ -30,33 +27,58 @@ class Brain:
   
   def update()????????????
   
+  def memory()
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+  
 class Robot
   steps = 
-  epsilon = 
+  epsilon = EPSILON_MAX
   
   def init(params)
     initialize
   
-  def action() #roll the dice for a move
+  def act() #roll the dice for a move
     if random.random() < epsilon
-      return thing
+      return random action
     else
-      return other thing
+      return optimal action # action = argmax Q(s, a')
   
   def observe()
-
+    observe that reward
+    
   def learn() #learning fun
 
+  def loss function()
+    err = 
+    ~ magic ~
+    return (loss)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+  
 class Domain #our simulated world
   
   def init(params)
-   
-  def run
+    init map
+    
+  def run(robot, agents)
     while True:
-      act
-      observe
-      learn
-      
+      action = robot.act
+      reward(action)
+      robot.observe(reward)
+      robot.learn
+
+  def reward(action)
+    scan map
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+    
+class Agents
+  
+  def init(params)
+   
+  def pathfinding(params)
+  
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
  
 agents = agents
