@@ -1,7 +1,9 @@
 # TODO 
   - [ ] MVP <--- 
   - [ ] project <--- 
+    - [ ] Algorithm Converges
   - [ ] bonsuses! <--- 
+    - [ ] A3C Network
   
 ### functions
   - [ ] Reward
