@@ -3,7 +3,7 @@
   - [ ] project <--- 
     - [ ] Algorithm Converges
   - [ ] bonsuses! <--- 
-    - [ ] A3C Network
+    - [ ] A3C Network distributed across the NFS
   
 ### functions
   - [ ] Reward
