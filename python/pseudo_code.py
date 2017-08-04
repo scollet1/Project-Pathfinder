@@ -53,7 +53,7 @@ class Robot:
     
   def learn() #learning fun
 
-  def loss function()
+  def loss()
     err = 
     ~ magic ~
     loss = 0.5 * (reward + gammaQ() - Q())**2
