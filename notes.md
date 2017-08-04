@@ -29,7 +29,7 @@
     
   R_a(s, s') is the immediate reward received after transitioning from state s to state s' due to action a
 
-  g is an element of [0, 1] otherwise known as the discount factor
+  g is an element of [0, 1] otherwise known as the discount factor
     - for each step in time, rewards farthest from the agent are diminished
 
   π(s) := ∑ P_π(s) • (s, s')(R_π(s) • (s, s') + gV(s'))
