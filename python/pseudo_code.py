@@ -1,17 +1,19 @@
-# The only thing this code and I have in common is that neither of us runs
+# The only thing this code and I have in common is that neither of us run
 
 import dependencies such as numpy, math, $LIBRAIRIES
 
 # ~GLOBALS~ #
 
+EXPLORATION = "e-greedy"
+EPISODES = 20000 # large enough to converge, small enough that it doesn't take years
 define loss value = some num
 LEARNING_RATE = some num between [0.0000, 0.0004] # we can play around with this though
 MEMORY = large value # where we're going to store our long-short-term memory 
 BATCH_SIZE = 64 # how many nodes do we have??? [64, ~ 100] is a good range
 GAMMA = 0.004 # this discounts the reward by diminishing returns over time [0, 1]
 LAMBDA = rate of decay
-EPSILON_MAX = 0.999 #this is for a greedy epsilon problem to determine what actions we search for [0, 1]
-EPSILON_MIN = 0.001
+EPSILON_MAX = 0.99 #this is for a greedy epsilon problem to determine what actions we search for [0, 1]
+EPSILON_MIN = 0.01
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
@@ -35,6 +37,7 @@ class Brain:
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
   
 class Robot:
+  steps = 0
   epsilon = EPSILON_MAX
   
   def __init__(params)
@@ -54,6 +57,7 @@ class Robot:
   def loss function()
     err = 
     ~ magic ~
+    loss = 0.5 * (reward + gammaQ() - Q())**2
     return (loss)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
