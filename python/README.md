@@ -1,5 +1,8 @@
-# TODO
-
+# TODO 
+  - [ ] MVP <--- completed!
+  - [ ] project <--- completed!
+  - [ ] bonsuses! <--- completed!
+  
 ### functions
   - [ ] Reward
   - [ ] Loss
