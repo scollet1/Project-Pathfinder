@@ -1,7 +1,7 @@
 # TODO 
-  - [ ] MVP <--- completed!
-  - [ ] project <--- completed!
-  - [ ] bonsuses! <--- completed!
+  - [ ] MVP <--- 
+  - [ ] project <--- 
+  - [ ] bonsuses! <--- 
   
 ### functions
   - [ ] Reward
