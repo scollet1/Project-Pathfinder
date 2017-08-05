@@ -1,7 +1,7 @@
 # The only thing this code and I have in common is that neither of us run
 
 import dependencies such as numpy, math, $LIBRAIRIES
-import keras as keras
+import keras
 import numpy as numpy
 import math
 
@@ -56,10 +56,9 @@ class Robot:
     
   def learn() #learning fun
 
-  def loss()
-    err = 
-    ~ magic ~
-    loss = 0.5 * (reward + gammaQ() - Q())**2
+  def loss(target, prediction)
+    err = prediction - target
+    loss =  keras.mean(keras.sqrt(1 + keras.square(error)) - 1)
     return (loss)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
