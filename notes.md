@@ -82,7 +82,9 @@
 
     return s, readout, h_fc1
     ```
+    
 ## below is an aglorithm for action selection
+
   ```python
   if random.random() <= epsilon:
     print("----------Random Action----------")
