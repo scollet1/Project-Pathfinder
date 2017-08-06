@@ -81,8 +81,8 @@
     readout = tf.matmul(h_fc1, W_fc2) + b_fc2
 
     return s, readout, h_fc1
-    ```python
-    
+    ```
+  
 ## below is an aglorithm for action selection
 
   ```python
