@@ -5,6 +5,7 @@ import keras
 import numpy as numpy
 import math
 import random
+from collections import deque
 
 # ~GLOBALS~ #
 
@@ -43,7 +44,7 @@ class Robot:
   steps = 0
   epsilon = EPSILON_MAX
   
-  def __init__(params)
+  def __init__(self, state_size, action_size)
     initialize
   
   def act(state) #roll the dice for a move
@@ -64,11 +65,26 @@ class Robot:
     loss =  keras.mean(keras.sqrt(1 + keras.square(error)) - 1)
     return (loss)
 
+  def _build_model(self):
+     model = Sequential()
+     model.add(Dense(24, input_dim=self.state_size, activation='relu'))
+     model.add(Dense(24, activation='relu'))
+     model.add(Dense(self.action_size, activation='linear'))
+     model.compile(loss=self._huber_loss, optimizer=Adam(lr=self.learning_rate))
+     return model
+
+   def load(self, name):
+		self.model.load_weights(name)
+
+	def save(self, name):
+		self.model.save_weights(name)
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
   
 class Domain: #our simulated world
   
   def __init__(params)
+
     init map
 
   def state
