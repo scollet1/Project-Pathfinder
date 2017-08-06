@@ -18,7 +18,7 @@
       2. otherwise tt = rr + gmax Q(ss', aa')
    7. if robot has not updated location after 10 turns
       1. then restart the simulation
-  
+
 # Defining the MDP
 
   S is an infinite set of states
@@ -36,7 +36,11 @@
 
   π(s) := ∑ P_π(s) • (s, s')(R_π(s) • (s, s') + gV(s'))
           s'
+          
+# constructing a custom environment
 
+https://github.com/openai/gym/tree/master/gym/envs
+        
 # algorithms
 
 ## below is an algorithm for constructing a custom neural network
