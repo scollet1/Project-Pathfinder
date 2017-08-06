@@ -44,7 +44,7 @@ class Robot:
   steps = 0
   epsilon = EPSILON_MAX
   
-  def __init__(self, state_size, action_size)
+  def __init__(self, action_size)
     initialize
   
   def act(state) #roll the dice for a move
@@ -83,18 +83,18 @@ class Robot:
   
 class Domain: #our simulated world
   
-  def __init__(params)
-
+  def __init__(params):
+    
     init map
 
-  def state
+  def state:
     state = [17][17] # some 17 * 17 array of values from [0, 1]
     return state
     
-  def reward(action)
+  def reward(action):
     scan map
     
-  def reset()
+  def reset():
     return (self.state())
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
