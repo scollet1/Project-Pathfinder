@@ -10,6 +10,7 @@ from collections import deque
 # ~GLOBALS~ #
 
 EXPLORATION = "e-greedy"
+ACTIONS = 5
 EPISODES = 5000 # large enough to converge, small enough that it doesn't take years
 LEARNING_RATE = 0.0002 # some num between [0.0001, 0.0004] we can play around with this though
 MEMORY = large value # where we're going to store our long-short-term memory 
