@@ -41,7 +41,7 @@
 
 ## below is an algorithm for constructing a custom neural network
   
-  ```python
+```python
   def createNetwork():
     # network weights
     W_conv1 = weight_variable([8, 8, 4, 32])
@@ -81,7 +81,7 @@
     readout = tf.matmul(h_fc1, W_fc2) + b_fc2
 
     return s, readout, h_fc1
-    ```
+```
 
 
 
