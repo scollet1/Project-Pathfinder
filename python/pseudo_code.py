@@ -87,7 +87,7 @@ class Domain: #our simulated world
     
     init map
 
-  def state:
+  def state: # this method returns all information about our current state
     state = [17][17] # some 17 * 17 array of values from [0, 1]
     return state
     
