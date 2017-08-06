@@ -111,7 +111,7 @@ class Agents:
 if __name__ == "__main__":
   agents = agents
   robot = robot
-  domain = Domain
+  domain = gym.make('Custom-Domain')
   state_size = domain.state_size
 
   for e in range(EPISODES):
