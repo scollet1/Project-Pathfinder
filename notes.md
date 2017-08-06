@@ -6,18 +6,18 @@
 
 4. while(True)
    1. select action a
-     1. with probability epsilon select random action
-     2. otherwise elect a = argmax Q(s, a')
+      1. with probability epsilon select random action
+      2. otherwise elect a = argmax Q(s, a')
    2. carry out action a
    3. observe reward r and new state s'
    4. store experience <s, a, r, s'> in memory
   
    5. sample random transitions <ss, aa, rr, ss'> from memory
    6. calculate target for each minibatch transition
-     1. if ss' is terminal state then tt = rr
-     2. otherwise tt = rr + gmax Q(ss', aa')
+      1. if ss' is terminal state then tt = rr
+      2. otherwise tt = rr + gmax Q(ss', aa')
    7. if robot has not updated location after 10 turns
-     1. then restart the simulation
+      1. then restart the simulation
   
 # Defining the MDP
 
