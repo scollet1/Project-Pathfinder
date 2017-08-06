@@ -46,7 +46,7 @@ class Robot:
   def __init__(params)
     initialize
   
-  def act() #roll the dice for a move
+  def act(state) #roll the dice for a move
     if random.random() < epsilon
       return random action
     else
@@ -54,7 +54,9 @@ class Robot:
   
   def observe()
     observe that reward
-    
+  
+  def remember()
+  
   def learn() #learning fun
 
   def loss(target, prediction)
@@ -68,16 +70,16 @@ class Domain: #our simulated world
   
   def __init__(params)
     init map
-    
-  def run(robot, agents)
-    while True:
-      action = robot.act
-      reward(action)
-      robot.observe(reward)
-      robot.learn
 
+  def state
+    state = [17][17] # some 17 * 17 array of values from [0, 1]
+    return state
+    
   def reward(action)
     scan map
+    
+  def reset()
+    return (self.state())
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
     
@@ -88,11 +90,24 @@ class Agents:
   def pathfinding(params)
   
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
- 
-agents = agents
-robot = robot
-domain = Domain
 
-for e in range(EPISODES):
-  domain.run(robot, agents)
-  
+if __name__ == "__main__":
+  agents = agents
+  robot = robot
+  domain = Domain
+  state_size = domain.state_size
+
+  for e in range(EPISODES):
+    state = domain.reset()
+    state = numpy.reshape(state, [1, state_size])
+    for time in range(500)
+      action = robot.act(state)
+      reward = reward if not done else -10
+      robot.remember(state action, reward, next_state, done)
+      state = next_state
+      if done:
+        robot.update_target_model()
+        print("episode: {}/{}, score: {}, e: {:2}".format(e, EPISODES, time, agent.epsilon))
+				break
+    if len(robot.memory) > batch_size
+      robot.replay(batch_size)
