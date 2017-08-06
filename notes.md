@@ -1,23 +1,23 @@
 # Steps
 
-- initialize memory
-- initialize action_value function Q with random weights
-- observe initial state s
+1. initialize memory
+2. initialize action_value function Q with random weights
+3. observe initial state s
 
-- while(True)
-  - select action a 
-    - with probability epsilon select random action
-    - otherwise elect a = argmax Q(s, a')
-  - carry out action a
-  - observe reward r and new state s'
-  - store experience <s, a, r, s'> in memory
+4. while(True)
+  ⋅⋅1. select action a 
+    ⋅⋅1. with probability epsilon select random action
+    ⋅⋅2. otherwise elect a = argmax Q(s, a')
+  ⋅⋅2. carry out action a
+  ⋅⋅3. observe reward r and new state s'
+  ⋅⋅4. store experience <s, a, r, s'> in memory
   
-  - sample random transitions <ss, aa, rr, ss'> from memory
-  - calculate target for each minibatch transition
-    - if ss' is terminal state then tt = rr
-    - otherwise tt = rr + gmax Q(ss', aa')
-  - if robot has not updated location after 10 turns
-    - then restart the simulation
+  ⋅⋅5. sample random transitions <ss, aa, rr, ss'> from memory
+  ⋅⋅6. calculate target for each minibatch transition
+    ⋅⋅1. if ss' is terminal state then tt = rr
+    ⋅⋅2. otherwise tt = rr + gmax Q(ss', aa')
+  ⋅⋅7. if robot has not updated location after 10 turns
+    ⋅⋅1. then restart the simulation
   
 # Defining the MDP
 
