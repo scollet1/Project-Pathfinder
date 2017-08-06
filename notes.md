@@ -1,4 +1,5 @@
 # Steps
+-------
 
 1. initialize memory
 2. initialize action_value function Q with random weights
@@ -20,6 +21,7 @@
       1. then restart the simulation
 
 # Defining the MDP
+------------------
 
   S is an infinite set of states
 
@@ -43,6 +45,7 @@
 https://github.com/openai/gym/tree/master/gym/envs
         
 # Algorithms
+------------
 
 ## below is an algorithm for constructing a custom neural network
   
