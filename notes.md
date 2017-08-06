@@ -37,11 +37,12 @@
   π(s) := ∑ P_π(s) • (s, s')(R_π(s) • (s, s') + gV(s'))
           s'
           
-# constructing a custom environment
+# Constructing a Custom Environment
+-----------------------------------
 
 https://github.com/openai/gym/tree/master/gym/envs
         
-# algorithms
+# Algorithms
 
 ## below is an algorithm for constructing a custom neural network
   
