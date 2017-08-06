@@ -40,7 +40,8 @@
 # algorithms
 
 ## below is an algorithm for constructing a custom neural network
-  '''def createNetwork():
+  '''python
+  def createNetwork():
   //network weights
     W_conv1 = weight_variable([8, 8, 4, 32])
     b_conv1 = bias_variable([32])
@@ -78,4 +79,5 @@
     // readout layer
     readout = tf.matmul(h_fc1, W_fc2) + b_fc2
 
-    return s, readout, h_fc1'''
+    return s, readout, h_fc1
+    '''
