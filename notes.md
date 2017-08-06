@@ -43,7 +43,9 @@
 -----------------------------------
 
 https://github.com/openai/gym/tree/master/gym/envs
-        
+
+Basically, we can define an environment package to feed into the OpenAI gym dependency
+
 # Algorithms
 ------------
 
