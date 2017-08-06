@@ -4,11 +4,12 @@ import dependencies such as numpy, math, $LIBRAIRIES
 import keras
 import numpy as numpy
 import math
+import random
 
 # ~GLOBALS~ #
 
 EXPLORATION = "e-greedy"
-EPISODES = 100 # large enough to converge, small enough that it doesn't take years
+EPISODES = 5000 # large enough to converge, small enough that it doesn't take years
 LEARNING_RATE = some num between [0.0000, 0.0004] # we can play around with this though
 MEMORY = large value # where we're going to store our long-short-term memory 
 BATCH_SIZE = 64 # how many nodes do we have??? [64 ~ 128]
