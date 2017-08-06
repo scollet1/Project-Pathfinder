@@ -42,7 +42,7 @@
 ## below is an algorithm for constructing a custom neural network
 
   def createNetwork():
-    //network weights
+  //network weights
     W_conv1 = weight_variable([8, 8, 4, 32])
     b_conv1 = bias_variable([32])
 
