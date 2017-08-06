@@ -15,7 +15,7 @@ LEARNING_RATE = some num between [0.0000, 0.0004] # we can play around with this
 MEMORY = large value # where we're going to store our long-short-term memory 
 BATCH_SIZE = 64 # how many nodes do we have??? [64 ~ 128]
 GAMMA = 0.95 # this discounts the reward by diminishing returns over time [0, 1]
-LAMBDA = 0.99
+LAMBDA = 0.99 # a rate of change in epsilon
 EPSILON_MAX = 0.99 # this is for a greedy epsilon problem to determine what actions we search for [0, 1]
 EPSILON_MIN = 0.01 # this is the target epsilon value as be begin to narrow down our policy
 
