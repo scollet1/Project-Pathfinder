@@ -5,7 +5,7 @@
 3. observe initial state s
 
 4. while(True)
-  1. select action a 
+  1. select action a
     1. with probability epsilon select random action
     2. otherwise elect a = argmax Q(s, a')
   2. carry out action a
